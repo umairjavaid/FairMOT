@@ -125,7 +125,10 @@ class opts(object):
                              default='../src/lib/cfg/data.json',
                              help='load data from cfg')
     self.parser.add_argument('--data_dir', type=str, default='/data/yfzhang/MOT/JDE')
-
+    
+    #frame_interval
+    self.parser.add_argument('--frame_interval', type=int, default=20)
+    
     # loss
     self.parser.add_argument('--mse_loss', action='store_true',
                              help='use mse loss or focal loss to train '
