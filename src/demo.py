@@ -28,11 +28,10 @@ def demo(opt):
     frame_rate = dataloader.frame_rate
     
     frame_interval = opts.frame_interval
-    video_name = opts.video_name
     
     frame_dir = None if opt.output_format == 'text' else osp.join(result_root, 'frame')
     eval_seq(opt, dataloader, 'mot', result_filename,
-             save_dir=frame_dir, show_image=False, frame_rate=frame_rate, frame_interval=frame_interval, video_name = video_name,
+             save_dir=frame_dir, show_image=False, frame_rate=frame_rate, frame_interval=frame_interval,
              use_cuda=opt.gpus!=[-1])
 
     if opt.output_format == 'video':
