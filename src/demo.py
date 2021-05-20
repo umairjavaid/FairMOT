@@ -27,7 +27,7 @@ def demo(opt):
     
     frame_rate = dataloader.frame_rate
     
-    frame_interval = opts.frame_interval
+    frame_interval = opt.frame_interval
     print("frame_interval: ",frame_interval)
     
     
