@@ -28,6 +28,8 @@ def demo(opt):
     frame_rate = dataloader.frame_rate
     
     frame_interval = opts.frame_interval
+    print("frame_interval: ",frame_interval)
+    
     
     frame_dir = None if opt.output_format == 'text' else osp.join(result_root, 'frame')
     eval_seq(opt, dataloader, 'mot', result_filename,
